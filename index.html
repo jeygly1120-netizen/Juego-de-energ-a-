@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ciudad de las Energías</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="menu">
+  <div class="menu-box">
+    <h1>🌎 Ciudad de las Energías</h1>
+    <p>Construye una vida equilibrada atrapando energías positivas.</p>
+    <button id="playBtn">▶ JUGAR</button>
+  </div>
+</div>
+
+<div id="game">
+
+  <header>
+    <h2>🌟 Ciudad de las Energías</h2>
+
+    <div class="stats">
+      <span>⭐ <b id="score">0</b></span>
+      <span>💰 <b id="money">0</b></span>
+      <span>❤️ <b id="lives">3</b></span>
+      <span>🏆 Nv. <b id="level">1</b></span>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="game-area">
+      <canvas id="canvas"></canvas>
+
+      <div id="mission">
+        🎯 Misión:
+        <span id="missionText">
+          Consigue 3 energías positivas
+        </span>
+      </div>
+    </section>
+
+    <aside>
+
+      <h3>⚡ Energías</h3>
+
+      <div class="energy-list">
+        <div>❤️ Amor <b id="love">0</b></div>
+        <div>💰 Dinero <b id="wealth">0</b></div>
+        <div>🏠 Hogar <b id="home">0</b></div>
+        <div>🩺 Salud <b id="health">0</b></div>
+      </div>
+
+      <h3>🛒 Tienda</h3>
+
+      <button class="shop" id="speedBtn">
+        👟 Velocidad + <span>20💰</span>
+      </button>
+
+      <button class="shop" id="lifeBtn">
+        ❤️ Comprar vida <span>50💰</span>
+      </button>
+
+      <button class="shop" id="shieldBtn">
+        🛡️ Escudo <span>80💰</span>
+      </button>
+
+      <h3>🎮 Controles</h3>
+
+      <div class="controls">
+        <button id="up">⬆️</button>
+        <div>
+          <button id="left">⬅️</button>
+          <button id="down">⬇️</button>
+          <button id="right">➡️</button>
+        </div>
+      </div>
+
+    </aside>
+
+  </main>
+
+</div>
+
+<div id="gameOver">
+  <div class="menu-box">
+    <h1>💥 Fin del juego</h1>
+    <p>Puntuación: <b id="finalScore">0</b></p>
+    <button id="restartBtn">🔄 VOLVER A JUGAR</button>
+  </div>
+</div>
+
+<script src="game.js"></script>
+
+</body>
+</html>
